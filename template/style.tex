@@ -1,0 +1,32 @@
+\usepackage[]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+\setmainfont[BoldFont={DIN Next LT Pro}]{DIN Next LT Pro Medium}
+\setmonofont[BoldFont={DIN Next LT Pro}]{DIN Next LT Pro Medium}
+
+
+
+\geometry{top =50mm}
+\usepackage{enumitem}
+
+
+\setlist[description]{
+	font={\bfseries}
+}
+
+
+
+
+
+\definecolor{footercolor}{HTML}{595959}
+
+\usepackage[]{scrlayer-scrpage}
+\clearpairofpagestyles
+\chead{\includegraphics[width=0.6\columnwidth]{../../template/logo.pdf}}
+\ofoot{\pagemark}
+\cfoot{\small\color{footercolor}
+Träger- und Förderverein MINT Oberland | Bruggfeldstraße 5 | 6500 Landeck \par
+office@mint.tirol | www.mint.tirol | ZVR-1223647736\par
+AT09 3699 0000 0913 4099 | RBRTAT22
+}

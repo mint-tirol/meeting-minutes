@@ -1,0 +1,134 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+%\usepackage[ansinew]{inputenc}
+\usepackage[german]{babel}
+%\usepackage{german}
+%\usepackage[TwoColumn]{minutes}
+\usepackage{minutes}
+\usepackage{caption}
+
+
+% ----------------------------------------------------------------
+\begin{document}
+
+\begin{Minutes}{Protokoll der Jahreshauptversammlung vom 24.10.2022}
+  \subtitle{Träger und Förerverein Mint Oberland}
+  \moderation{Philipp Machac}
+  \minutetaker{Simon Abler}
+  \participant{Siehe Anwesenheitsliste
+    \enclosure{Anwesenheitsliste}{Anwesenheitsliste}
+  }
+
+  \minutesdate{12th March 2014}
+  \starttime{15:00}
+  \endtime{17:00}
+  \location{Landeck}
+  %\missing{}
+  \maketitle
+
+
+
+  % Header end ---------------------------------------------------------
+
+
+
+
+
+  \topic{Begrüßung und Feststellung der Beschlussfähigkeit}
+  \topic{Wahl der Versammlungsleitung}
+
+  \topic{Genehmigung des letzten Protokolls}
+
+  \topic{Berichte des Vorstandes}
+  \subtopic{Rückblick auf das letzte Jahr}
+  \subtopic{Bericht des Vorstandes}
+  \subtopic{Bericht des Schatzmeister/Kassenwart}
+  \subtopic{Bericht des Kassenprüfers}
+
+  \subtopic{Aussprache und Entlastung des Vorstandes}
+
+
+  \Onevote{Entlastung des Vorstandes }{}{}{}
+
+  \topic{Neuwahlen}
+  \subtopic{Wahlverfahren}
+  \begin{Vote}
+    \vote{Abstimmung per Handzeichen}{}{}{}
+    \vote{Blockwahl}{}{}{}
+  \end{Vote}
+
+  \subtopic{Wahl des Vorstandes}
+  Zur Wahl als neuer Vorstand stehen:
+  \begin{itemize}
+    \item dfsdf
+    \item sdfsdf
+  \end{itemize}
+
+  \begin{Vote}
+    \vote{Abstimmung über den neuen Vorstand}{2}{3}{4}
+    \vote{Annahme der Wahl durch den neuen Vorstand}{}{}{}
+  \end{Vote}
+
+  \begin{Argumentation}
+    \Pro Ein Viertel der Kosten wird eingespart.
+    \pro Der erhöhte Arbeitsaufwand bedeutet mehr gemeinsame Arbeit und stärkt das Zusammengehörigkeitsgefühl.
+    \Contra Der Arbeitsaufwand wird erhöht ohne signifikante Verbesserungen zu bringen.
+    \contra Der Arbeitsablauf verkompliziert sich.
+    \result Die vorgeschlagene Änderung wird abgelehnt.
+  \end{Argumentation}
+
+  \subtopic{Wahl der Kassenprüfer}
+  \begin{Vote}
+    \vote{? als Kassenprüfer}{}{}{}
+    \vote{Annahme der Wahl der Kassenprüferin}{}{}{}
+  \end{Vote}
+
+
+
+  \topic{Dates}
+  \schedule{2000/12/24}{Christmas eve}
+  \schedule{2000/12/24}[20:00]{distribution of presents}
+  \schedule*{2000/12/25}{Christmas day (without entry in calendar)}
+
+  %\subtopic{Wahl weiterer Ämter}
+
+  %\topic{Satzungsänderungen}
+
+  \topic{Verabschiedung des Haushaltsplans}
+  \Onevote{Annahme des Haushaltsplanes}{}{}{}
+
+  \topic{Anträge}
+
+  \topic{Verschiedenes}
+
+  \topic{Wer macht was bis wann? Verteilung der Aufgaben}
+  \task{Petra Peterson}[15.08.2019]{Protokoll schreiben}
+
+
+  \signature{Martin Muster}
+  \signature{Petra Peterson}
+\end{Minutes}
+
+% ----------------------------------------------------------------
+\newpage\thispagestyle{empty}
+\newcounter{nummer}
+\newcommand{\oneline}{
+  \stepcounter{nummer}
+  \arabic{nummer}\rule{0mm}{8mm}&&&&\\\hline
+}
+
+\begin{minipage}{\textwidth}
+  \begin{tabular}{|r|p{5cm}|*{2}{|p{5mm}}|p{5cm}|}\hline
+    \multicolumn{5}{|c|}{\bfseries Anwesenheitsliste}                    \\\hline\hline
+    Nr. & Name, Vorname & \multicolumn{2}{l|}{Mitglied} & Unterschrift   \\
+        &               & ja                            & nein         & \\\hline
+    %% \loop in tabular klappt nicht
+    %\oneline\oneline\oneline\oneline\oneline
+    \oneline\oneline\oneline\oneline\oneline\oneline\oneline\oneline\oneline\oneline
+    \oneline\oneline\oneline\oneline\oneline\oneline\oneline\oneline\oneline\oneline
+  \end{tabular}
+\end{minipage}
+
+
+\end{document}
+% ----------------------------------------------------------------

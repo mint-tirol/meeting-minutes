@@ -2,9 +2,15 @@
 \usepackage{fontspec}
 \usepackage{xcolor}
 
-\setmainfont[BoldFont={DIN Next LT Pro}]{DIN Next LT Pro Medium}
-\setmonofont[BoldFont={DIN Next LT Pro}]{DIN Next LT Pro Medium}
 
+\setmainfont{DINNextLTPro}[ 
+	Path = ../../template/,
+	Extension = .otf,
+	BoldFont = *-Bold,
+	ItalicFont= *-Italic,
+	BoldItalicFont= *-BoldItalic,
+	UprightFont = *-Regular
+	]
 
 
 \geometry{top =50mm}
@@ -14,9 +20,6 @@
 \setlist[description]{
 	font={\bfseries}
 }
-
-
-
 
 
 \definecolor{footercolor}{HTML}{595959}
